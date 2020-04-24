@@ -1,9 +1,11 @@
 # Micro-CMS v1
 ### Flag 0
 * Create a new page
-* The url for new page is [http://35.227.24.107/\<instance-hash>/page/14]() while the first 2 pages had page numbers 1 and 2
-* Try all page numbers from 3-13. Pages 3, 4, 5 give 404 error while page 7 gives 403 Forbidden error.
-* Open page 7 for editing to get the flag.
+* Check Url http://34.94.3.143/40cc016d42/page/12  
+* Try chaging page numbers at the end (3,4, etc..) response  Page not found.
+* http://34.94.3.143/40cc016d42/page/7 gives Forbidden
+* Use the edit append 7 http://34.94.3.143/40cc016d42/page/edit/7
+* Falg found
 
 ### Flag 1
 * Try SQL injection in add post
