@@ -24,7 +24,7 @@
 
 ## Flag 4
 * Inspect the delete
-* <a style="color: red;" href="index.php?page=delete.php&amp;id=eccbc87e4b5ce2fe28308fd9f2a7baf3">delete</a>
+* a style="color: red;" href="index.php?page=delete.php&amp;id=eccbc87e4b5ce2fe28308fd9f2a7baf3">delete</a>
 * Check the id=eccbc87e4b5ce2fe28308fd9f2a7baf3 equals to MD5 hash value of 3
 * Send c4ca4238a0b923820dcc509a6f75849b which is MD5 Value for 1 to delete the post
 * you would find flag 4
