@@ -18,8 +18,8 @@
 * Inspect the the create button in the index page
 * For my own eyes only check it 
 * Inspect page
-* <a href="index.php?page=view.php&amp;id=8"><2a>
-* change <a href="index.php?page=view.php&amp;id=2"></a>
+* a href="index.php?page=view.php&amp;id=8"<2a>
+* change  href="index.php?page=view.php&amp;id=2"></a>
 * Click the link you get the flag 
 
 ## Flag 4
