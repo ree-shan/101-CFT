@@ -8,15 +8,18 @@
 * Falg found
 
 ### Flag 1
-* Try SQL injection in add post
-* Create a new page. Enter '<>:;" in both input boxes. 
-* The flag would be displayed as a pop up.
+* on the Markdown Test creat a onclick event
+* button onclick=alert(1)>click</button>
+* on clickking the button the code is executed
+* Inspect the page to get the flag
 
 ### Flag 2
-* Add onclick event handler to button in Marktown Test.
-* On clicking the JS code is executed.
-* View page source to get the Flag.
+* Creat a new page
+* Enter hello<script>alert(1);</script> in the Title
+* when pressed home flag poped up
 
 ### Flag 3
-* Try SQLi in the URL
-* Add ' to edit page URL for any post to get the flag.
+* when editing the page tried ' after the id
+* http://34.94.3.143/40cc016d42/page/edit/1'
+* flag shows up in the page.
+
