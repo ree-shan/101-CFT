@@ -1,1 +1,18 @@
+### Flag 0
+* Click on new page 
+* on the login page try using ',' for username and password
+* Exposes the database MariaDB and admin table
+* use burbsuite to inetercept and capture the POST request save it in a file
+POST /181444b73d/login HTTP/1.1
+Host: 35.190.155.168
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://35.190.155.168/181444b73d/login
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 23
+Connection: close
+Upgrade-Insecure-Requests: 1
 
+username=rr&password=ss
